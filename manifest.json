@@ -3,10 +3,19 @@
     "name": "RestaurantGetter",
     "version": "1.0",
     "description" : "Generates a random restaurant by the users location",
+    "permissions": ["alarms", "notifications", "storage"], //?
     "content_scripts": [
         {
           "matches": ["https://www.youtube.com/*"],
           "js": ["./main.js"]
         }
-      ]
+    ],
+    "action" : {
+        "default_title": "Most popular restaurant near me",
+        "default_popup" : "popup.html"
+    },
+
+    "icons" : {
+        "16":"icon.jpg"
+    }
   }
