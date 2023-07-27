@@ -5,7 +5,7 @@
 //     "description" : "Generates a random restaurant by the users location",
 //     "host_permissions": ["alarms", "notifications", "storage", "https://www.youtube.com/*"],  // new
 //     "background": {
-//         "service_worker": "background.js"
+//         "service_worker": "background.js",
 //     },
 //     "action" : {
 //         "default_title": "Most popular restaurant near me",
@@ -27,7 +27,8 @@
     "description" : "Generates a random restaurant by the users location",
     "host_permissions": ["alarms", "notifications", "storage"], //?
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "background.js",
+        "type" : "module"
     },
     "content_scripts": [
         {

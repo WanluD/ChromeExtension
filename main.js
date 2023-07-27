@@ -7,10 +7,14 @@
 //   });
 // }
 
-const myButton = document.getElementById("generate");
-myButton.addEventListener("click", function () {
-  chrome.runtime.sendMessage({ buttonClicked: true });
-});
+// const city = document.getElementById("places");
+// const myButton = document.getElementById("generate");
+// myButton.addEventListener("click", function () {
+//   const prefs = {
+//     location : city.value,
+//   }
+//   chrome.runtime.sendMessage({ buttonClicked: true, prefs});
+// });
 
 // function getPlace() {
 //   let inputValue = assignValue();
@@ -81,3 +85,25 @@ myButton.addEventListener("click", function () {
   }
 </script> */
 //}
+
+
+
+/* BACK UP PLAN!!!!!!!!!!!!!!!!!**************/
+
+
+//Add 3rd city...
+const restaurants = {
+  "Baltimore" : "https://bodhicorner.com/federal-hill/",
+  "Philadelphia" : "https://dimsumgardenphilly.com/",
+  "New York City" :"https://www.difarapizzany.com/"
+}
+
+const town = document.getElementById("places");
+
+const button = document.getElementById("generate");
+button.addEventListener("click", function () {
+  const restaurant = restaurants.Baltimore; //Needs to access the url
+  const input = town.value;
+  //console.log(restaurants[input]);
+  window.open(restaurants[input], "_blank")
+})
