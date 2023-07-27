@@ -1,40 +1,57 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Extension</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyFKAPE1Jc9klMKeKKVeiGmWlgYPLaKdc&libraries=places"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyFKAPE1Jc9klMKeKKVeiGmWlgYPLaKdc&libraries=places"></script>-->
   </head>
   <body>
-    <h1>Google Extension Project!</h1>
+    <div class="center-container">
+      <img src="images/giphy.gif" width="128" height="128" id="gif128" />
+    </div>
 
     <!-- form: user input for location -->
     <!-- <input type="text" id="autocomplete">
 <button onclick="getPlaceId()">Get Place ID</button> -->
     <form class="form">
-      <label for="places">location</label>
+      <label for="places"> City:</label>
       <input
         type="text"
         id="places"
         name="places"
-        placeholder="places"
+        placeholder="city"
         required
       />
-      <label for="food">food</label>
-      <input type="text" id="food" name="places" placeholder="food" required />
-      <button id="generate">Generate Restaurant</button>
+      <label for="food">Keyword:</label>
+      <input
+        type="text"
+        id="food"
+        name="places"
+        placeholder="keyword"
+        required
+      />
+      <button id="generate">Take me there!</button>
     </form>
 
     <!-- form: food selection keyword ('pizza') -->
 
     <!-- button: to randomize  -->
 
-    <img src="images/icon16.png" id="iconImage16" />
+    <!-- <img src="images/icon16.png" id="iconImage16" />
     <img src="images/icon32.png" id="iconImage32" />
-    <img src="images/icon48.png" id="iconImage48" />
-    <img src="images/icon128.png" id="iconImage128" />
+    <img src="images/icon48.png" id="iconImage48" /> -->
+    <!-- <img src="images/icon128.png" id="iconImage128" /> -->
+
+    <!-- <iframe
+      src="https://giphy.com/embed/Xd1T0QGJQJcdKM4KOq"
+      width="128"
+      height="128"
+      frameborder="0"
+      class="giphy-embed"
+      allowfullscreen
+    ></iframe> -->
 
     <script src="main.js"></script>
   </body>
