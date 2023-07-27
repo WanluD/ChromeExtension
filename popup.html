@@ -2,13 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Extension</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyFKAPE1Jc9klMKeKKVeiGmWlgYPLaKdc&libraries=places"></script> -->
   </head>
   <body>
     <h1>Google Extension Project!</h1>
-    <img src="./icon.png" id="iconImage" />
+
+    <!-- form: user input for location -->
+    <!-- <input type="text" id="autocomplete">
+<button onclick="getPlaceId()">Get Place ID</button> -->
+    <form class="form">
+      <label for="places">location</label>
+      <input
+        type="text"
+        id="places"
+        name="places"
+        placeholder="places"
+        required
+      />
+      <label for="food">food</label>
+      <input type="text" id="food" name="places" placeholder="food" required />
+      <button id="generate">Generate Restaurant</button>
+    </form>
+
+    <!-- form: food selection keyword ('pizza') -->
+
+    <!-- button: to randomize  -->
+
+    <img src="images/icon16.png" id="iconImage16" />
+    <img src="images/icon32.png" id="iconImage32" />
+    <img src="images/icon48.png" id="iconImage48" />
+    <img src="images/icon128.png" id="iconImage128" />
+
     <script src="main.js"></script>
   </body>
 </html> -->
