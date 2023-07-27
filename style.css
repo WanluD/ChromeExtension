@@ -15,6 +15,20 @@ body {
     margin-top: 20px;
 }
 
+#h1, #places, #food{
+    color: #D33A2C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+#placesPH, #foodPH{
+  font-style: italic;
+}
+
+#places, #food{
+  font-size: medium;
+}
 .places {
     display: flex;
     flex-direction: column;
@@ -45,6 +59,8 @@ body {
 
 /* CSS */
 #generate {
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #FFE7E7;
   background-position: 0 0;
@@ -69,7 +85,7 @@ body {
   touch-action: manipulation;
   white-space: nowrap;
   word-break: break-word;
-  padding: 2px 1px;
+  padding: 1px 10px;
 }
 
 #generate:active,

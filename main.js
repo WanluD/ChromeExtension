@@ -95,7 +95,7 @@ const restaurants = {
   "New York City": "https://www.difarapizzany.com/",
 };
 
-const town = document.getElementById("places");
+const town = document.getElementById("placesPH");
 
 const button = document.getElementById("generate");
 button.addEventListener("click", function () {

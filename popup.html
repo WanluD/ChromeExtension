@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="border-radius: 5px" ;>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Extension</title>
+    <h1 id="h1">Whatcha craving?</h1>
     <link rel="stylesheet" href="style.css" />
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyFKAPE1Jc9klMKeKKVeiGmWlgYPLaKdc&libraries=places"></script>-->
   </head>
@@ -17,22 +18,22 @@
 <button onclick="getPlaceId()">Get Place ID</button> -->
     <form class="form">
       <div class="places">
-        <label for="places"> City:</label>
+        <label for="places" id="places"> City:</label>
         <input
           type="text"
-          id="places"
+          id="placesPH"
           name="places"
-          placeholder="city"
+          placeholder="City"
           required
         />
       </div>
       <div class="food">
-        <label for="food">Keyword: </label>
+        <label for="food" id="food">Keyword: </label>
         <input
           type="text"
-          id="food"
+          id="foodPH"
           name="food"
-          placeholder="keyword"
+          placeholder="Keyword"
           required
         />
       </div>
