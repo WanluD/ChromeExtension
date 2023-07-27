@@ -16,23 +16,27 @@
     <!-- <input type="text" id="autocomplete">
 <button onclick="getPlaceId()">Get Place ID</button> -->
     <form class="form">
-      <label for="places"> City:</label>
-      <input
-        type="text"
-        id="places"
-        name="places"
-        placeholder="city"
-        required
-      />
-      <label for="food">Keyword:</label>
-      <input
-        type="text"
-        id="food"
-        name="places"
-        placeholder="keyword"
-        required
-      />
-      <button id="generate">Take me there!</button>
+      <div class="places">
+        <label for="places"> City:</label>
+        <input
+          type="text"
+          id="places"
+          name="places"
+          placeholder="city"
+          required
+        />
+      </div>
+      <div class="food">
+        <label for="food">Keyword: </label>
+        <input
+          type="text"
+          id="food"
+          name="food"
+          placeholder="keyword"
+          required
+        />
+      </div>
+      <div><button id="generate">Take me there!</button></div>
     </form>
 
     <!-- form: food selection keyword ('pizza') -->

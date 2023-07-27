@@ -86,17 +86,14 @@
 </script> */
 //}
 
-
-
 /* BACK UP PLAN!!!!!!!!!!!!!!!!!**************/
-
 
 //Add 3rd city...
 const restaurants = {
-  "Baltimore" : "https://bodhicorner.com/federal-hill/",
-  "Philadelphia" : "https://dimsumgardenphilly.com/",
-  "New York City" :"https://www.difarapizzany.com/"
-}
+  Baltimore: "https://bodhicorner.com/federal-hill/",
+  Philadelphia: "https://dimsumgardenphilly.com/",
+  "New York City": "https://www.difarapizzany.com/",
+};
 
 const town = document.getElementById("places");
 
@@ -105,5 +102,5 @@ button.addEventListener("click", function () {
   const restaurant = restaurants.Baltimore; //Needs to access the url
   const input = town.value;
   //console.log(restaurants[input]);
-  window.open(restaurants[input], "_blank")
-})
+  window.open(restaurants[input], "_blank");
+});

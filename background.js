@@ -1,4 +1,4 @@
-import fetchLocations from "/api/fetchLocations.js"
+import fetchLocations from "/api/fetchLocations.js";
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message.buttonClicked) {
